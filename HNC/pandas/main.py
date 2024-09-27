@@ -77,14 +77,21 @@ import numpy as np
 
 #Percentage of population each country holds
 
-world = pd.read_csv(r"C:\Users\WILLCROSS\Desktop\HNC\pandas\world_population.csv")
+#world = pd.read_csv(r"C:\Users\WILLCROSS\Desktop\HNC\pandas\world_population.csv")
 
-world = pd.DataFrame(world, columns = ["Country", "2022 Population"])
+#world = pd.DataFrame(world, columns = ["Country", "2022 Population"])
 
-world["Percentage share"] = (world["2022 Population"] / world["2022 Population"].sum()) * 100
+#world["Percentage share"] = (world["2022 Population"] / world["2022 Population"].sum()) * 100
  
-pd.set_option('display.max_rows', None)  
-pd.set_option('display.max_columns', None)  
+#pd.set_option('display.max_rows', None)  
+#pd.set_option('display.max_columns', None)  
 
 
-print(world[["Country", "2022 Population", "Percentage share"]].sort_values("Percentage share", ascending=False)) 
+#print(world[["Country", "2022 Population", "Percentage share"]].sort_values("Percentage share", ascending=False)) 
+
+
+#Task 3 
+
+#Population by continent
+
+world = pd.read_csv(r"C:\Users\WILLCROSS\Desktop\HNC\pandas\world_population.csv")
